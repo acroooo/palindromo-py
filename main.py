@@ -1,5 +1,7 @@
 def palindromo(palabra):
-    p = palabra.replace(' ', '').lower()
+    pal = palabra.replace(' ', '')
+    p = pal.replace(',', '')
+    p = p.lower()
     p_inv = p[::-1]
     if p == p_inv:
         return True
